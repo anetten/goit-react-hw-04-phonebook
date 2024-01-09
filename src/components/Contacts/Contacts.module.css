@@ -1,0 +1,5 @@
+.contacts {
+  overflow: auto;
+  max-height: 300px;
+  margin-top: 20px;
+}
