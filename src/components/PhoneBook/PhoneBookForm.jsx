@@ -28,11 +28,25 @@ export const PhoneBookForm = ({ handleAddForm }) => {
       <form className={css.form} action="" onSubmit={handleFromSubmit}>
         <label className={css.formLabel}>
           <span className={css.formLabelText}>Name</span>
-          <input className={css.formInput} type="text" name="name" required />
+          <input
+            className={css.formInput}
+            type="text"
+            name="name"
+            value={name}
+            onChange={e => setName(e.target.value)}
+            required
+          />
         </label>
         <label className={css.formLabel}>
           <span className={css.formLabelText}>Number</span>
-          <input className={css.formInput} type="tel" name="number" required />
+          <input
+            className={css.formInput}
+            type="tel"
+            name="number"
+            value={number}
+            onChange={e => setNumber(e.target.value)}
+            required
+          />
         </label>
         <button type="submit">Add contact</button>
       </form>
